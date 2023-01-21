@@ -12,8 +12,10 @@ Begin
     SET @Counter = 1
     WHILE ( @Counter <= @empnumber)
     BEGIN
-        SELECT CONCAT(FirstName, ' ', LastName) as FullName
+        SELECT CONCAT(FirstName, N' ', MiddleName, N' ', LastName) as FullName
 			  ,Title
+              ,BirthDate
+              ,HireDate
         From DimEmployee Where EmployeeKey = @Counter
 
         SET @Counter  = @Counter  + 1
