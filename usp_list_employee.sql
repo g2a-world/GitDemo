@@ -5,6 +5,7 @@
             - Middle Name
             - BirthDate
             - HiredDate
+	01/21/2023 - GA Added EmployeeKey information.
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
@@ -16,7 +17,7 @@ Begin
     SET @Counter = 1
     WHILE ( @Counter <= @empnumber)
     BEGIN
-        SELECT CONCAT(FirstName, N' ', MiddleName, N' ', LastName) as FullName
+        SELECT EmployeeKey, CONCAT(FirstName, N' ', MiddleName, N' ', LastName) as FullName
 			  ,Title
               ,BirthDate
               ,HireDate
