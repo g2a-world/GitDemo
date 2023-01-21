@@ -1,6 +1,10 @@
 
 /*
 	01/21/2023 - GA Added the Title of each selected employees.
+    01/21/2023 - Three additional columns added
+            - Middle Name
+            - BirthDate
+            - HiredDate
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
