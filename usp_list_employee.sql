@@ -6,6 +6,8 @@
             - BirthDate
             - HiredDate
 	01/21/2023 - GA Added EmployeeKey information.
+
+    01/22/2023 - GA Added calculated age at date of hire.
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
@@ -21,6 +23,7 @@ Begin
 			  ,Title
               ,BirthDate
               ,HireDate
+              ,DATEDIFF(YEAR, BirthDate, HireDate) AgeAtHire
         From DimEmployee Where EmployeeKey = @Counter
 
         SET @Counter  = @Counter  + 1
@@ -31,3 +34,5 @@ END
 --Exec usp_list_employee 5
 
 --Select * from DimEmployee
+
+--select * From [dbo].[DimOrganization]
