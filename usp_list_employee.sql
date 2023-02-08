@@ -14,6 +14,8 @@
     02/08/2023 - Start using visual studio for source control.
 
     Checking commit All and push senario.
+
+    Commit all and sync from local branch.
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
