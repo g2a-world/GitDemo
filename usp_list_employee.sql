@@ -15,7 +15,7 @@
 
     Checking commit All and push senario.
 
-    Commit all and sync from local branch.
+    Commit all and sync from local branches.
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
