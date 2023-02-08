@@ -10,6 +10,8 @@
     01/22/2023 - GA Added calculated age at date of hire (calculated in month).
 
     01/23/3023 - This stored procedure need to be reviewed and approved.
+
+    02/08/2023 - Start using visual studio for source control.
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
