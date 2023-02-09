@@ -22,6 +22,8 @@
     comment 10003
 
     comment 10004
+
+    local code work in progress
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
