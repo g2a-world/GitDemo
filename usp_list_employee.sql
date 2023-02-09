@@ -20,6 +20,8 @@
 
     comment 10002
     comment 10003
+    
+    Code reviewed by remote developer
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
