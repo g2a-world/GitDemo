@@ -5,11 +5,11 @@
             - Middle Name
             - BirthDate
             - HiredDate
-	01/21/2023 - GA Added EmployeeKey information.
+	----------------------------------------01/21/2023 - GA Added EmployeeKey information.
 
-    01/22/2023 - GA Added calculated age at date of hire (calculated in month).
+ ----------------------------------------   01/22/2023 - GA Added calculated age at date of hire (calculated in month).
 
-    01/23/3023 - This stored procedure need to be reviewed and approved.
+ ----------------------------------------   01/23/3023 - This stored procedure need to be reviewed and approved.
 */
 
 ALTER Procedure usp_list_employee @empnumber INT
